@@ -8,6 +8,8 @@
 
 ### 🏋️‍♂️Ejercicios
 
+- implementamos nuestro propio `useState`
+
 ### 🍬 Crédito Extra
 
 ## 📣 Feedback

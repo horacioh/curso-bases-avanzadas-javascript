@@ -8,6 +8,9 @@
 
 ### 🏋️‍♂️Ejercicios
 
+- refactor de funciones usando los features aprendidas
+- buscar ejemplos reales de codigo para convertir
+
 ### 🍬 Crédito Extra
 
 ## 📣 Feedback

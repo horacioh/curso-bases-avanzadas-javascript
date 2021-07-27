@@ -8,6 +8,8 @@
 
 ### 🏋️‍♂️Ejercicios
 
+- refactor de commonjs a esmodules
+
 ### 🍬 Crédito Extra
 
 ## 📣 Feedback

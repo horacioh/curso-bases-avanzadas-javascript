@@ -8,6 +8,9 @@
 
 ### 🏋️‍♂️Ejercicios
 
+- crear un reducer
+- buscar ejemplos reales de codigo para convertir
+
 ### 🍬 Crédito Extra
 
 ## 📣 Feedback

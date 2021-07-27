@@ -8,6 +8,8 @@
 
 ### 🏋️‍♂️Ejercicios
 
+- transform a list of objects into a separate shape (fetch => transform)
+
 ### 🍬 Crédito Extra
 
 ## 📣 Feedback

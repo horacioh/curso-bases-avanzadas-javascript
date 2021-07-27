@@ -8,6 +8,8 @@
 
 ### 🏋️‍♂️Ejercicios
 
+- crear un buscador de X API
+
 ### 🍬 Crédito Extra
 
 ## 📣 Feedback
