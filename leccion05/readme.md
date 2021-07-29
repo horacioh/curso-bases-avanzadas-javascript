@@ -8,6 +8,9 @@
 
 ### 🏋️‍♂️Ejercicios
 
+- implementar nuestra version de `isPlainObject`
+- reference: https://github.com/jonschlinkert/is-plain-object/blob/master/is-plain-object.js
+
 ### 🍬 Crédito Extra
 
 ## 📣 Feedback

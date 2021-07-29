@@ -2,7 +2,9 @@
 
 # 🐾 Primeros pasos
 
-### 🎯Objetivos
+En JavaScript **NO** todo es un objeto. Conocer los tipos primitivos de JavaScript nos ayuda a entender y aprovecharlos de su naturaleza dinámica, para poder solucionar y resolver problemas de una manera más eficiente y con bases claras. Nosotros podemos crear programas sin tener mucha idea sobre éstos tipos, el problema es cuando nos encontramos errores y no podamos resolverlos de una manera sencilla o correcta.
+
+📜 Fundamental leer sobre los Tipos Primitivos en [Aprendamos sobre los Tipos Primitivos de JavaScript](https://www.horacioh.com/writing/tipos-primitivos-javascript?source=curso-escuelafrontend-github).
 
 ### 🏋️‍♂️Ejercicios
 
