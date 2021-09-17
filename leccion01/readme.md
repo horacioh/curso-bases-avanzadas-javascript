@@ -31,19 +31,16 @@ Verás un montón de tests fallidos en la consola:
 ![muestra de tests fallidos](assets/tests-fallidos.png)
 
 Ahora puedes abrir el archivo [`./sum.js`](sum.js) y empezar a implementar la funcion `sum` siguiento las siguientes instrucciones
+
 ## Instrucciones
 
-
+- [ ] 1. Comprueba que los tipos de `a` y de `b` son de tipo `number` o `string`
+- [ ] 2. antes de sumar ambos numeros, tienes que asegurarte que ambos sean de tipo `number` para evitar concatenación de cadenas de texto!
 
 ### 🍬 Crédito Extra
 
-
+- [ ] 3. recuerda que `NaN` es de tipo `number`, ¿Cómo puedes comprobar que no sea `NaN`?
 
 ## 📣 Feedback
 
 Por favor completa [este formulario](https://docs.google.com/forms/d/e/1FAIpQLSf6hxzKdcgkQv6EKjS1AXmGO_Y49Aa86zOpcveI3Xp-ZIHYTg/viewform?usp=pp_url&entry.1972342453={{MI-EMAIL}}&entry.1828471740=leccion-01)
-
----
-**Agradecimientos**
-
-El ejercicio que hemos hecho en esta lección fue traducido del curso "Deep JavaScript Foundations, v3" de [Kyle Simpson](https://github.com/getify) que puedes encontrar en [Frontend Masters](https://frontendmasters.com/courses/deep-javascript-v3/). Kyle me ha dado concentimiento para usar su mismo ejercicio!

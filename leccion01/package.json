@@ -4,7 +4,7 @@
   "author": "Horacio Herrera <hi@horacioh.com>",
   "license": "MIT",
   "scripts": {
-    "test:w": "jest --watch"
+    "start": "jest --watch sum.test.js"
   },
   "engines": {
     "node": ">=15.0.0"

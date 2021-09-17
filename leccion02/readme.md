@@ -2,7 +2,9 @@
 
 # 🐾 Primeros pasos
 
+Cuando hablamos de operaciones de igualdad en JavaScript inevitablemente estamos hablando de "coerción de tipos" (¡sí, JavaScript tiene tipos de datos!, te los explico en [este](https://escuelafrontend.com/articulos/los-tipos-primitivos-en-javascript) artículo). Considero que la coerción es un pilar elemental para tener fundamentos sólidos sobre el lenguaje, me atrevería a decir de cualquier otro lenguaje dinámico, pero no estoy tan seguro de eso.
 
+En cualquier caso, entender como los tipos de los valores y variables que usamos son manipulados, los tipos de conversiones más habituales y cuando aprovecharse o evitar la coerción de tipos es clave para escribir programas bien estructurados y con menos errores. **¿Estás lista o listo?**
 
 📜 Fundamental leer sobre Igualdad en JavaScript [TODO agregar articulo!]().
 
@@ -47,11 +49,11 @@ Ahora puedes abrir el archivo [`./custom-object.js`](custom-object.js) y empezar
 
 ### 🍬 Crédito Extra
 
-1. Intenta comprobar `NaN` sin usar la función `Number.isNaN()`, ¿Cómo lo harías?
+- [ ] 7. Intenta comprobar `NaN` sin usar la función `Number.isNaN()`, ¿Cómo lo harías?
 
 ## 📣 Feedback
 
-Por favor completa [este formulario](https://docs.google.com/forms/d/e/1FAIpQLSf6hxzKdcgkQv6EKjS1AXmGO_Y49Aa86zOpcveI3Xp-ZIHYTg/viewform?usp=pp_url&entry.1972342453={{MI-EMAIL}}&entry.1828471740=leccion-01)
+Por favor completa [este formulario](https://docs.google.com/forms/d/e/1FAIpQLSf6hxzKdcgkQv6EKjS1AXmGO_Y49Aa86zOpcveI3Xp-ZIHYTg/viewform?usp=pp_url&entry.1972342453={{MI-EMAIL}}&entry.1828471740=leccion-02)
 
 ---
 **Agradecimientos**

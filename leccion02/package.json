@@ -1,10 +1,11 @@
 {
-  "name": "curso-javascript-avanzado-leccion-01",
+  "name": "curso-javascript-avanzado-leccion-02",
+  "description": "Lección sobre Igualdad en JavaScript",
   "version": "0.1.0",
   "author": "Horacio Herrera <hi@horacioh.com>",
   "license": "MIT",
   "scripts": {
-    "test:w": "jest --watch"
+    "start": "jest --watch custom-object.test.js"
   },
   "engines": {
     "node": ">=15.0.0"
