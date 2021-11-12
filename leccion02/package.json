@@ -11,9 +11,9 @@
     "node": ">=15.0.0"
   },
   "dependencies": {
-    "jest": "^27.0.6"
+    "jest": "^27.2.0"
   },
   "devDependencies": {
-    "@types/jest": "^26.0.24"
+    "@types/jest": "^27.0.1"
   }
 }

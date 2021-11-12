@@ -1,8 +1,8 @@
 module.exports = {
   ...Object,
-  is: ObjectIs,
+  is: MiObjectIs,
 }
 
-function ObjectIs(x, y) {
+function MiObjectIs(x, y) {
   // ...
 }

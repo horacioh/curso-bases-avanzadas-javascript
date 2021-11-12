@@ -1,7 +1,7 @@
 module.exports = {
   sum: function sum(a, b) {
     if (
-      (typeof a == "string" || typeof a == "number") &&
+      (t  ypeof a == "string" || typeof a == "number") &&
       (typeof b == "string" || typeof b == "number")
     ) {
       if (Object.is(a, NaN) || Object.is(b, NaN)) {
