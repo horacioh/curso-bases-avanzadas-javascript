@@ -1,0 +1,83 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background: #fafafa;
+  font-family: "Helvetica Neue", arial, sans-serif;
+  font-weight: 400;
+  color: #444;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+ul,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+#app {
+  height: 100%;
+}
+
+.small-text {
+  font-size: 12px;
+  opacity: 0.5;
+}
+
+main {
+  margin: 0 auto;
+  width: 600px;
+}
+
+.controls,
+.controls ul {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.controls > p {
+  flex: none;
+}
+
+.controls ul {
+  flex: 1;
+}
+
+.controls li {
+  list-style-type: none;
+}
+
+.button {
+  all: unset;
+  background: transparent;
+  padding: 4px 8px;
+  border-radius: 3px;
+}
+
+.button:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.button.active {
+  background: rebeccapurple;
+  color: white;
+}
+
+.product-item {
+  list-style-type: none;
+  padding: 16px;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  margin-top: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}

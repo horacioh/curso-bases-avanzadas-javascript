@@ -1,4 +1,6 @@
-const { sum } = require("./sum")
+import { describe, expect, test } from 'vitest'
+import { sum } from './sum-final'
+
 
 describe("sum", () => {
   test("sum(2, 1)", () => {
@@ -30,8 +32,12 @@ describe("sum", () => {
   })
 })
 
-describe("sum Extra Points", () => {
-  test.skip(`sum(2, NaN)`, () => {
+describe.skip("sum Puntos Extra!!", () => {
+  test(`sum(2, NaN)`, () => {
     expect(sum(2, NaN)).toEqual("invalid")
+  })
+
+  test(`Aceptar más variables sum(2, 3, 4) (Más Dificultad)`, () => {
+    expect(sum(2, 3, 4)).toEqual(9)
   })
 })

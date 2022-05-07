@@ -1,5 +1,3 @@
-module.exports = {
-  sum: function sum(a, b) {
-    // Implementación aquí!
-  },
+export function sum(a, b) {
+  // Implementame!
 }

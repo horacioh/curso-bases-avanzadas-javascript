@@ -4,15 +4,15 @@
   "author": "Horacio Herrera <hi@horacioh.com>",
   "license": "MIT",
   "scripts": {
-    "start": "jest --watch sum.test.js"
+    "start": "vitest"
   },
   "engines": {
     "node": ">=15.0.0"
   },
   "dependencies": {
-    "jest": "^27.0.6"
+    "vitest": "^0.10.5"
   },
   "devDependencies": {
-    "@types/jest": "^26.0.24"
+    "@vitest/ui": "^0.10.5"
   }
 }

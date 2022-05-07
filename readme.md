@@ -1,11 +1,11 @@
-# 🎉 Bienvenido 
+# 🎉 Bienvenido
 
 ## TODOs
 
-- [ ] rellenar mi info en readme principal
+- [x] rellenar mi info en readme principal
 - [ ] plantear los ejercicios para cada leccion
-- [ ] leccion 01
-- [ ] leccion 02
+- [x] leccion 01
+- [x] leccion 02
 - [ ] leccion 03
 - [ ] leccion 04
 - [ ] leccion 05
@@ -19,24 +19,23 @@
 
 ## 🚌 Bases de JavaScript Avanzadas: Construye una base sólida para los frameworks
 
-<<que aprenderan aqui?>>
+<<TODO: que aprenderan aqui?>>
 
 ## 👨🏻‍💻 Resumen del Workshop
 
-
 ## 👨🏻‍💻¿Quién soy?
 
-👋 Soy Horacio Herrera, padre, diseñador, desarrollador, instructor.
+👋 Soy Horacio Herrera, padre, diseñador, desarrollador, instructor. Actualmente estoy creando mi primera startup, [Mintter](https://mintter.com), una herramienta descentralizada de deliberación pública. Desde el 2017 enseño JavaScript, React, GraphQL y todo lo que sé a profesionales tanto en bootcamps como en privado, ayudándoles a desarrollar aplicaciones y produtos de alto nivel y calidad.
 
-<<mas sobre mi>>
+Generalmente comparto contenido de todo lo que aprendo, todo (casi siempre) relacionado con la programación JavaScript, herramientas para mejorar tu productividad y la intersección entre Diseño y Programación.
 
-Puedes encontrarme en twitter como [@hhg2288](https://twitter.com/hhg2288)
+Puedes encontrarme en twitter por [@hhg2288](https://twitter.com/hhg2288)
 
 ## ⏰ Antes del workshop
 
 ¿Que necesitas saber para sacarle el mayor provecho al curso?
 
-<<listado y recomendaciones de donde aprender>>
+<<TODO: listado y recomendaciones de donde aprender>>
 
 ## 📝 Sobre el workshop
 
@@ -44,7 +43,7 @@ Puedes encontrarme en twitter como [@hhg2288](https://twitter.com/hhg2288)
 
 Cada concepto o contenido esta encapsulado en su propia lección y cada lección tiene su propio directorio con recursos, ejemplos de código y desafíos.
 
-En cada directorio encontrarás un nuevo archivo *readme.md*, en el encontrarás una descripción de lo que encontrarás en la lección e instrucciones para llevar a cabo los ejercicios, desafíos o cuestionarios.
+En cada directorio encontrarás un nuevo archivo _readme.md_, en el encontrarás una descripción de lo que encontrarás en esa lección e instrucciones para llevar a cabo los ejercicios, desafíos o cuestionarios.
 
 Además encontrarás la configuración necesaria para ejecutar el proyecto que te permitirá resolver los ejercicios.
 
@@ -77,10 +76,9 @@ Para esto encontrás comentarios y emojis que te ayudarán en el camino.
   - [11 - Operadores](./leccion11/readme.md)
   - [12 - Promesas y async/await](./leccion12/readme.md)
 
-
 #### outline
 
-- **intro******
+- **intro\*\*\*\***
   - welcome
   - de que se trata
   - para quien es
@@ -120,7 +118,7 @@ Para esto encontrás comentarios y emojis que te ayudarán en el camino.
     - destructuring
     - default parameters
     - rest/spread
-  - 10  
+  - 10
     - ESModules
       - import/export
   - 11

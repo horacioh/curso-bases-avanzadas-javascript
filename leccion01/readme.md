@@ -2,13 +2,13 @@
 
 # 🐾 Primeros pasos
 
-En JavaScript **NO** todo es un objeto. Conocer los tipos primitivos de JavaScript nos ayuda a entender y aprovecharlos de su naturaleza dinámica, para poder solucionar y resolver problemas de una manera más eficiente y con bases claras. Nosotros podemos crear programas sin tener mucha idea sobre éstos tipos, el problema es cuando nos encontramos errores y no podamos resolverlos de una manera sencilla o correcta.
+En JavaScript **NO** todo es un objeto. Debido a la naturaleza Dinámica de JavaScript, conocer sus tipos primitivos nos ayuda a solucionar y resolver problemas de una manera más eficiente y con bases claras. Sabiendo sobre los tipos primitivos nos ayuda a poder resolver problemas en nuestras aplicaciones de manera eficiente y más correcta.
 
-📜 Fundamental leer sobre los Tipos Primitivos en [Aprendamos Sobre los Tipos de Datos Primitivos en JavaScript](https://escuelafrontend.com/articulos/los-tipos-primitivos-en-javascript).
+📜 Te recomiendo leer ["Aprendamos Sobre los Tipos de Datos Primitivos en JavaScript"](https://escuelafrontend.com/articulos/los-tipos-primitivos-en-javascript) en [Escuela Frontend](https://escuelafrontend.com).
 
-### 🏋️‍♂️Ejercicios
+### 🏋️‍♂️ Ejercicios
 
-En este Ejercicio, crearemos la simple funcion `sum()`.
+En este Ejercicio, crearemos la funcion `sum`. El objetivo de ésta función es sumar las variables que recibe.
 
 ## Configuración de la lección
 
@@ -16,14 +16,14 @@ Es requerido tener instalado una versión de `node` superior a `15.x`. Puedes in
 
 ```bash
 git clone <REPO>
-cd leccion02
-npm install
+cd leccion01
+npm install # o yarn install o pnpm install
 ```
 
 Para poder empezar con el ejercicio, necesitas ejecutar el siguiente comando:
 
 ```bash
-npm run test:w
+npm run start
 ```
 
 Verás un montón de tests fallidos en la consola:
