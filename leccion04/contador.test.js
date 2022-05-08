@@ -35,42 +35,53 @@ describe("Contador", () => {
 
   // Créditos extra
 
-  describe.skip("Créditos extra", () => {
+  describe("Créditos extra", () => {
     test("SuperContador (de 3 en 3)", () => {
-      let porTres = SuperContador(3);
-      let contador = porTres();
+      let contador = SuperContador(0);
+      let porTres = contador(3);
 
-      contador.sumar();
-      contador.sumar();
-      contador.sumar();
-      contador.restar();
+      porTres.sumar();
+      porTres.sumar();
+      porTres.sumar();
+      porTres.restar();
 
-      expect(contador.printValue()).toBe(6);
+      expect(porTres.printValue()).toBe(6);
     });
 
     test("SuperContador (de 4 en 4)", () => {
-      let porCuatro = SuperContador(4);
-      let contador = porCuatro();
+      let contador = SuperContador();
+      let porTres = contador(3);
 
-      contador.sumar();
-      contador.reset();
-      contador.sumar();
-      contador.sumar();
-      contador.restar();
+      porTres.sumar();
+      porTres.reset();
+      porTres.sumar();
+      porTres.sumar();
+      porTres.restar();
 
-      expect(contador.printValue()).toBe(4);
+      expect(porTres.printValue()).toBe(3);
     });
 
     test("Iniciar el contador en un numero determinado", () => {
-      let porCuatro = SuperContador(4);
-      let contador = porCuatro(2);
+      let contador = SuperContador(2);
+      let porCuatro = contador(4);
 
-      contador.sumar();
-      contador.sumar();
-      contador.sumar();
-      contador.restar();
+      porCuatro.sumar();
+      porCuatro.sumar();
+      porCuatro.sumar();
+      porCuatro.restar();
 
-      expect(contador.printValue()).toBe(10);
+      expect(porCuatro.printValue()).toBe(10);
+    });
+
+    test("Al iniciar el contador en un numero determinado, `reset` debe asignar este valor nuevamente, no cero (0)", () => {
+      let contador = SuperContador(2);
+      let porCuatro = contador(4);
+
+      porCuatro.sumar();
+      porCuatro.sumar();
+      porCuatro.reset();
+
+      expect(porCuatro.printValue()).toBe(2);
     });
   });
 });

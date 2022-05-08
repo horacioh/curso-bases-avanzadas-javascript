@@ -1,6 +1,31 @@
 function Contador(paso = 1) {
 
+  let valor = 0
 
+  return {
+    sumar,
+    restar,
+    printValue,
+    reset
+  }
+
+  // ====================
+
+  function sumar() {
+    valor += paso
+  }
+
+  function restar() {
+    valor -= paso
+  }
+
+  function reset() {
+    valor = valorInicial
+  }
+
+  function printValue() {
+    return valor
+  }
 }
 
 /**
@@ -10,36 +35,8 @@ function Contador(paso = 1) {
    */
 // ...
 
-export function SuperContador(paso = 1) {
+export function SuperContador(valorInicial = 0) {
 
-  return function Contador(valorInicial = 0) {
-
-    let valor = valorInicial
-
-    return {
-      sumar,
-      restar,
-      printValue,
-      reset
-    }
-
-    // ====================
-
-    function sumar() {
-      valor += paso
-    }
-
-    function restar() {
-      valor -= paso
-    }
-
-    function reset() {
-      valor = 0
-    }
-
-    function printValue() {
-      return valor
-    }
-  }
+  // ...
 
 }
