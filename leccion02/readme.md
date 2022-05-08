@@ -17,16 +17,18 @@ En este Ejercicio, definiremos nuestra propia versión de la función `Object.is
 
 Es requerido tener instalado una versión de `node` superior a `15.x`. Puedes instalarla [directamente](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) o puedes cambiar a una version igual o mayour [usando nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
 
+Debes instalar [pnpm](https://pnpm.io/) para que tengas menos problemas ejecutando los ejercicios. Puedes seguir los pasos para instalarlo en tu sistema [aquí](https://pnpm.io/installation)
+
 ```bash
 git clone <REPO>
-cd leccion01
-npm install
+cd leccion02
+pnpm install
 ```
 
 Para poder empezar con el ejercicio, necesitas ejecutar el siguiente comando:
 
 ```bash
-npm run test:w
+pnpm start
 ```
 
 Verás un montón de tests fallidos en la consola:

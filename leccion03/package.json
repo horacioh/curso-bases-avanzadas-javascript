@@ -1,19 +1,15 @@
 {
-  "name": "products",
-  "version": "0.0.0",
+  "name": "leccion03",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "serve": "vite preview"
+    "start": "nodemon leccion03.js"
   },
+  "keywords": [],
+  "author": "Horacio Herrera",
+  "license": "ISC",
   "dependencies": {
-    "@xstate/react": "^1.6.3",
-    "faker": "^5.5.3",
-    "preact": "^10.5.13",
-    "xstate": "^4.26.1"
-  },
-  "devDependencies": {
-    "@preact/preset-vite": "^2.0.0",
-    "vite": "^2.6.4"
+    "nodemon": "^2.0.16"
   }
 }
