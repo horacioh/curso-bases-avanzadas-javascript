@@ -1,9 +1,9 @@
 const CustomReact = (function CustomReact() {
   /**
-   * en nuestro CustomReact es donde debemos crear nuestra "variable provada" para crear nuestro "closure". Necesitamos guardar dos valores:
+   * en nuestro CustomReact es donde debemos crear nuestra "variable probada" para crear nuestro "closure". Necesitamos guardar dos valores:
    * - un arreglo con todos los "hooks" que nuestro componente implemente
    * - un numero que guarde el indice del hook que estamos ejecutando.
-   * 
+   *
    * ¿Porqué crees que es necesario guardar el indice? 🤔
    */
 
@@ -17,7 +17,7 @@ const CustomReact = (function CustomReact() {
        */
 
       // es importante guardar una referencia a el hook que estamos ejecutando para poder usarlo dentro de nuestra función `useState` luego
-      let hookIndice = current
+      let hookIndice = current;
 
       function setState(nuevoValor) {
         /**
@@ -29,37 +29,37 @@ const CustomReact = (function CustomReact() {
        * 4. useState debe devolver un arreglo con dos valores:
        * - el primero es el valor del hook
        * - el segundo es el `setState` que definimos arriba
-       * 
-       * HINT 1: 
+       *
+       * HINT 1:
        */
-      return [hooks[current++], setState]
+      return [hooks[current++], setState];
     },
     render(Component) {
       /**
        * la function `render` simula la renderización de los componentes de nuestra aplica
        */
-      const Comp = Component()
-      Comp.render()
-      current = 0
-      return Comp
+      const Comp = Component();
+      Comp.render();
+      current = 0;
+      return Comp;
     },
-  }
-})()
+  };
+})();
 
 function Counter() {
-  let [count, setCount] = CustomReact.useState(0)
+  let [count, setCount] = CustomReact.useState(0);
   return {
     sumar: () => setCount(count + 1),
     noop: () => setCount(count),
-    render: () => console.log('render', { count })
-  }
+    render: () => console.log("render", { count }),
+  };
 }
 
-var App
-App = CustomReact.render(Counter) // render { count: 0 }
-App.sumar() // suma 1 a count
-App = CustomReact.render(Counter) // render { count: 1 }
-App.noop() // count no deveria cambiar
-App = CustomReact.render(Counter) // render { count: 1 }
-App.sumar() // suma 1 a count
-App = CustomReact.render(Counter) // render { count: 2 }
+var App;
+App = CustomReact.render(Counter); // render { count: 0 }
+App.sumar(); // suma 1 a count
+App = CustomReact.render(Counter); // render { count: 1 }
+App.noop(); // count no deveria cambiar
+App = CustomReact.render(Counter); // render { count: 1 }
+App.sumar(); // suma 1 a count
+App = CustomReact.render(Counter); // render { count: 2 }

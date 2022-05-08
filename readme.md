@@ -7,6 +7,7 @@
 - [x] leccion 01
 - [x] leccion 02
 - [ ] leccion 03
+  - no se que ejercicio hacer para esta leccion en el que pueda decir que los conocimientos ayudan a also realmente util en la vida real
 - [ ] leccion 04
 - [ ] leccion 05
 - [ ] leccion 06

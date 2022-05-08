@@ -1,5 +1,5 @@
-import { createModel } from "xstate/lib/model"
-import { data } from "./data.json"
+import { assign, createMachine } from "xstate"
+import { data } from './data.json'
 
 export type Product = {
   id: string
@@ -10,50 +10,67 @@ export type Product = {
   department: string
 }
 
-export var productsModel = createModel(
-  {
-    predicate: null as keyof Product | null,
-    products: [],
-  },
-  {
-    events: {
-      REPORT_DATA_RESOLVED: (data: Array<Product>) => ({ data }),
-      CHANGE_ORDER: (predicate: string) => ({ predicate }),
-    },
-  }
-)
+type ProductsMachineContext = {
+  predicate: keyof Product | null,
+  products: Array<Product>,
+}
 
-export var productsMachine = productsModel.createMachine({
+type ProductsMachineEvent = {
+  type: 'REPORT_DATA_RESOLVED',
+  data: Array<Product>
+} | {
+  type: 'CHANGE_PREDICATE',
+  predicate: keyof Product
+}
+
+export var productsMachine = createMachine({
+  tsTypes: {} as import("./products-machine.typegen").Typegen0,
+  schema: {
+    context: {} as ProductsMachineContext,
+    events: {} as ProductsMachineEvent
+  },
   initial: "idle",
-  context: productsModel.initialContext,
+  context: {
+    predicate: null,
+    products: []
+  },
   states: {
     idle: {
       invoke: {
-        src: (context, event) => (callback, onReceive) => {
-          setTimeout(() => {
-            callback(productsModel.events.REPORT_DATA_RESOLVED(data))
-          }, 1000)
-        },
+        src: 'fetchProducts',
+        id: 'fetchProducts'
       },
       on: {
         REPORT_DATA_RESOLVED: {
           target: "ready",
-          actions: productsModel.assign({
-            products: (_, event) => event.data,
-          }),
+          actions: ['assignProducts']
         },
       },
     },
     ready: {
       on: {
-        CHANGE_ORDER: {
-          actions: [
-            productsModel.assign({
-              predicate: (_, event) => event.predicate,
-            }),
-          ],
+        CHANGE_PREDICATE: {
+          actions: ['assignPredicate'],
         },
       },
     },
   },
+}, {
+  actions: {
+    assignPredicate: assign({
+      predicate: (_, event) => event.predicate,
+    }),
+    assignProducts: assign({
+      products: (_, event) => event.data,
+    })
+  },
+  services: {
+    fetchProducts: () => (sendBack) => {
+      setTimeout(() => {
+        sendBack({
+          type: 'REPORT_DATA_RESOLVED', data
+        })
+      }, 1000)
+    }
+  }
 })

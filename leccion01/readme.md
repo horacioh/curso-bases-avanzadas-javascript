@@ -40,6 +40,7 @@ Ahora puedes abrir el archivo [`./sum.js`](sum.js) y empezar a implementar la fu
 ### 🍬 Crédito Extra
 
 - [ ] 3. recuerda que `NaN` es de tipo `number`, ¿Cómo puedes comprobar que no sea `NaN`?
+- [ ] 4. que pasa si permitimos pasar más de dos valores? (`sum(2, 3, 4)`)
 
 ## 📣 Feedback
 

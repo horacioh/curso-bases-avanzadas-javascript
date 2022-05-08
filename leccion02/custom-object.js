@@ -1,8 +1,3 @@
-module.exports = {
-  ...Object,
-  is: MiObjectIs,
-}
-
-function MiObjectIs(x, y) {
+export function ObjectIs(a, b) {
   // ...
 }

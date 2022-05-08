@@ -1,20 +1,11 @@
-import { useMachine } from "@xstate/react"
-import { StateFrom } from "xstate"
-import { productsMachine } from "./products-machine"
-import { useProducts } from "./use-products"
-
-function selectProducts(state: StateFrom<typeof productsMachine>) {
-  return state.context.products
-}
-
-function selectPredicate(state: StateFrom<typeof productsMachine>) {
-  return state.context.predicate
-}
+import { useMachine } from "@xstate/react";
+import { productsMachine } from "./products-machine";
+import { useProducts } from "./use-products";
 
 export function App(props) {
-  var [state, send] = useMachine(productsMachine)
-  var { predicate, products: data } = state.context
-  const products = useProducts(data, predicate)
+  var [state, send] = useMachine(productsMachine);
+  var { predicate, products: data } = state.context;
+  const products = useProducts(data, predicate);
 
   return (
     <main>
@@ -65,9 +56,9 @@ export function App(props) {
               </p>
               <p className="small-text">{product.description}</p>
             </li>
-          )
+          );
         })}
       </ul>
     </main>
-  )
+  );
 }
